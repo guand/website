@@ -8,8 +8,8 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 // Getting our combined reducers
 import reducers from './reducers/reducers';
-// And our Recipe component
-import Recipe from './containers/Recipe'
+// And our Post component
+import Post from './containers/Post'
 
 // Define our store
 const store = createStore(reducers, applyMiddleware(thunk));
@@ -19,7 +19,7 @@ const App = () => {
   return (
     // We will add our components here
     <div>
-      <Recipe />
+      <Post />
     </div>
   );
 };

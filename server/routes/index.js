@@ -12,7 +12,9 @@ var routes = {
 // Export our app routes
 exports = module.exports = function (app) {
     // Get access to the API route in our app
-    app.get('/api/recipe/', keystone.middleware.api, routes.api.index.list)
+    app.get('/api/recipe/', keystone.middleware.api, routes.api.recipes.list)
+    // Get access to the API route in our app
+    app.get('/api/post/', keystone.middleware.api, routes.api.posts.list)
     // Set up the default app route to  http://localhost:3000/index.html
     app.get('/', function (req, res) {
     // Render some simple boilerplate html
