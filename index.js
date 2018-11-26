@@ -16,17 +16,16 @@ keystone.init({
   // Updates provide an easy way to seed your database, 
   // transition data when your models change, 
   // or run transformation scripts against your database.
-  'wysiwyg override toolbar': false,
-  'wysiwyg menubar': true,
+
   'wysiwyg skin': 'lightgray',
   'wysiwyg additional buttons': 'searchreplace visualchars,'
    + ' charmap ltr rtl pagebreak paste, forecolor backcolor,'
-   +' emoticons media, preview print ',
+   +' emoticons media, preview print, image ',
   'wysiwyg additional plugins': 'example, table, advlist, anchor,'
-   + ' autolink, autosave, bbcode, charmap, contextmenu, '
+   + ' autolink, autosave, charmap, contextmenu, '
    + ' directionality, emoticons, fullpage, hr, media, pagebreak,'
    + ' paste, preview, print, searchreplace, textcolor,'
-   + ' visualblocks, visualchars, wordcount',
+   + ' visualblocks, visualchars, wordcount, image',
   'auto update': true,
   // The url for your MongoDB connection
   'mongo': 'mongodb://localhost/keystonereactcms',
